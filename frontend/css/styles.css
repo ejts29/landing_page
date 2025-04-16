@@ -1,0 +1,295 @@
+/* ========================================================
+   ESTILOS GENERALES
+======================================================== */
+body {
+  font-family: Arial, sans-serif; /* Fuente principal del sitio */
+  margin: 0; /* Elimina el margen por defecto del navegador */
+  padding: 0; /* Elimina el relleno por defecto */
+  line-height: 1.6; /* Altura entre líneas para mejorar la legibilidad */
+  background-color: rgb(218, 215, 215); /* Color de fondo gris claro */
+}
+
+h1, h2, h3 {
+  color: #555; /* Color gris oscuro para los encabezados */
+  /* Estilos para encabezados */
+}
+
+img {
+  max-width: 100%; /* La imagen no sobrepasará el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  /* Estilos para imágenes */
+}
+
+/* ========================================================
+ BARRA DE NAVEGACIÓN
+======================================================== */
+nav {
+  display: flex; /* Flexbox para distribuir los elementos horizontalmente */
+  justify-content: space-between; /* Espacio entre los elementos */
+  align-items: center; /* Centra los elementos verticalmente */
+  background: #222; /* Fondo oscuro */
+  padding: 10px 20px; /* Espaciado interno */
+  color: white; /* Color de texto blanco */
+}
+
+nav .logo {
+  color: #32c95e; /* Verde brillante para el logo */
+  font-size: 24px; /* Tamaño de fuente grande */
+  font-weight: bold; /* Fuente en negrita */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  /* Estilo del logo */
+}
+
+#menu ul {
+  display: flex; /* Muestra los elementos de lista en línea */
+  list-style: none; /* Elimina viñetas */
+  padding: 0; /* Elimina el relleno */
+  /* Menú de navegación */
+}
+
+#menu ul li {
+  margin: 0 10px; /* Espaciado entre los ítems del menú */
+  /* Espaciado entre elementos del menú */
+}
+
+#menu ul li a {
+  color: white; /* Color de los enlaces */
+  text-decoration: none; /* Elimina el subrayado */
+  /* Estilos de los enlaces del menú */
+}
+
+/* Botón hamburguesa para móviles */
+#btn-menu {
+  display: none; /* Oculto por defecto */
+  background: none; /* Sin fondo */
+  border: none; /* Sin borde */
+  font-size: 24px; /* Tamaño grande */
+  color: white; /* Color del ícono */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+/* ========================================================
+ BOTONES ADICIONALES
+======================================================== */
+#botones-adicionales button {
+  background: #32c95e; /* Color de fondo verde */
+  color: white; /* Texto en blanco */
+  border: none; /* Sin bordes */
+  padding: 8px 15px; /* Relleno interno */
+  margin: 5px; /* Separación entre botones */
+  cursor: pointer; /* Cursor interactivo */
+}
+
+/* Efecto hover para botones */
+#botones-adicionales button:hover {
+  background-color: #444; /* Cambia el color al pasar el mouse */
+}
+
+/* ========================================================
+ SECCIONES GENERALES
+======================================================== */
+section, div {
+  padding: 20px; /* Relleno interno */
+  text-align: center; /* Texto centrado */
+}
+
+/* ========================================================
+ FORMULARIOS
+======================================================== */
+form {
+  background: #f9f9f9; /* Fondo gris claro */
+  display: flex; /* Flexbox para el contenido */
+  flex-direction: column; /* Elementos en columna */
+  align-items: center; /* Centra horizontalmente */
+  max-width: 700px; /* Máximo ancho */
+  justify-content: center; /* Centra verticalmente */
+  margin: 10px 0; /* Margen vertical */
+  border-radius: 5px; /* Bordes redondeados */
+  border: 1px solid #ccc; /* Borde gris claro */
+  box-sizing: border-box; /* Incluye padding y borde en el ancho */
+  padding: 10px; /* Espaciado interno */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Campos de entrada */
+input, textarea {
+  width: 100%; /* Ocupa todo el ancho */
+  max-width: 400px; /* Máximo ancho */
+  padding: 10px; /* Relleno interno */
+  border: 1px solid #ccc; /* Borde gris claro */
+}
+
+/* Botones generales */
+button {
+  background: #32c95e; /* Fondo verde */
+  color: white; /* Texto blanco */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  cursor: pointer; /* Cursor interactivo */
+}
+
+/* ========================================================
+ MODO OSCURO
+======================================================== */
+.dark-mode {
+  background-color: #121212; /* Fondo oscuro */
+  color: #777; /* Texto gris claro */
+}
+
+.dark-mode #botones-adicionales button {
+  background-color: #444; /* Fondo gris oscuro */
+  color: white; /* Texto blanco */
+}
+
+.dark-mode #botones-adicionales button:hover {
+  background-color: #666; /* Color más claro al pasar el mouse */
+}
+
+/* Botón específico para activar modo oscuro */
+#btn-dark-mode {
+  background-color: #333; /* Fondo gris oscuro */
+  color: white; /* Texto blanco */
+}
+
+#btn-dark-mode:hover {
+  background-color: #555; /* Cambio de fondo al hacer hover */
+}
+
+/* ========================================================
+ FOOTER
+======================================================== */
+.seccion-footer {
+  background-color: #222; /* Fondo oscuro */
+  color: white; /* Texto blanco */
+  padding: 20px; /* Espaciado interno */
+  text-align: center; /* Centrado */
+}
+
+/* ========================================================
+ CONTROLES DE CARRUSEL (Bootstrap o personalizado)
+======================================================== */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #666; /* Fondo gris */
+  border-radius: 50%; /* Íconos circulares */
+}
+
+/* ========================================================
+ MEDIA QUERIES - RESPONSIVE DESIGN
+======================================================== */
+
+/* Dispositivos móviles (hasta 420px) */
+@media screen and (max-width: 420px) {
+  nav {
+      flex-direction: column; /* Elementos en columna */
+      text-align: center; /* Texto centrado */
+  }
+
+  #menu ul {
+      flex-direction: column; /* Menú vertical */
+      display: none; /* Oculto por defecto */
+      font-size: 14px; /* Tamaño de fuente más pequeño */
+  }
+
+  #menu ul li {
+      margin: 10px 0; /* Espaciado entre elementos */
+  }
+
+  #btn-menu {
+      display: block; /* Muestra el botón hamburguesa */
+  }
+
+  #menu.active ul {
+      display: flex; /* Muestra el menú al activarlo */
+  }
+
+  h1, h2, h3 {
+      font-size: 1.5em; /* Encabezados más pequeños */
+  }
+
+  form, section {
+      padding: 10px; /* Menos relleno */
+  }
+}
+
+/* Tablets (421px - 1024px) */
+@media screen and (min-width: 421px) and (max-width: 1024px) {
+  nav {
+      flex-direction: row; /* Elementos en fila */
+      text-align: center; /* Texto centrado */
+  }
+
+  #menu ul {
+      flex-direction: row; /* Menú horizontal */
+      display: flex; /* Visible */
+      font-size: 16px; /* Fuente media */
+  }
+
+  h1 {
+      font-size: 2em; /* Tamaño de encabezado */
+  }
+
+  form {
+      max-width: 90%; /* Ocupa el 90% del ancho */
+  }
+}
+
+/* Escritorio (desde 1025px) */
+@media screen and (min-width: 1025px) {
+  nav {
+      flex-direction: row; /* Menú horizontal */
+      justify-content: space-between; /* Separación de elementos */
+      text-align: left; /* Texto alineado a la izquierda */
+  }
+
+  #menu ul {
+      font-size: 18px; /* Fuente más grande */
+  }
+
+  h1 {
+      font-size: 2.5em; /* Encabezado grande */
+  }
+
+  form {
+      max-width: 700px; /* Ancho máximo para formularios */
+      margin: auto; /* Centrado automático */
+  }
+
+  #btn-menu {
+      display: none; /* No se muestra en escritorio */
+  }
+}
+
+/* Estilo duplicado de body para ciertas secciones */
+body {
+  font-family: Arial, sans-serif; /* Fuente */
+  margin: 20px; /* Margen general */
+  background-color: #fefefe; /* Fondo más claro */
+}
+
+h1, h2 {
+  color: #2c3e50; /* Azul oscuro para títulos */
+}
+
+/* Contenedor tipo grid para las cards */
+.grid-cards {
+  display: grid; /* Grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Columnas automáticas adaptables */
+  gap: 20px; /* Espacio entre las tarjetas */
+  margin-top: 15px; /* Separación superior */
+}
+
+/* Tarjetas de servicios y nosotros */
+.card-servicio,
+.card-nosotros {
+  background: #ecf0f1; /* Fondo gris claro */
+  padding: 15px; /* Relleno interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.card-servicio h3,
+.card-nosotros h3 {
+  margin-top: 0; /* Elimina margen superior */
+  color: #34495e; /* Azul grisáceo */
+}
