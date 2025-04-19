@@ -97,8 +97,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // -------- API: CARGAR SERVICIOS --------
-const API_SERVICIOS = 'http://localhost/fronted/Eval_U1/landing_page/backend/v1/services/';
-const API_NOSOTROS = 'http://localhost/fronted/Eval_U1/landing_page/backend/v1/about-us/';
+const API_SERVICIOS = 'http://localhost/landing_page/backend/v1/services/';
+const API_NOSOTROS = 'http://localhost/landing_page/backend/v1/about-us/';
 const TOKEN = 'ciisa'; // Token de autenticación (puede estar protegido)
 const idioma = 'esp'; // Idioma para mostrar contenido
 
